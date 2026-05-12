@@ -1,0 +1,66 @@
+{
+  "openai_submit_data": "/pythonsdk/openai/submitdata",
+  "openai_submit_data_and_eval": "/pythonsdk/openai/submitdataandeval",
+
+  "gemini_submit_data": "/pythonsdk/gemini/submitdata",
+  "gemini_submit_data_and_eval": "/pythonsdk/gemini/submitdataandeval",
+
+  "mistral_submit_data": "/pythonsdk/mistralai/submitdata",
+  "mistral_submit_data_and_eval": "/pythonsdk/mistralai/submitdataandeval",
+
+  "candidate_model_create": "/api/candidate_model",
+  "candidate_model_bulk_create": "/api/candidate_model/bulk_create",
+  "candidate_model_update": "/api/candidate_model/{candidate_model_id}",
+  "candidate_model_get_by_id": "/api/candidate_model/{candidate_model_id}",
+  "candidate_model_find_by_name_and_version": "/api/candidate_model/find_by?name={model_name}&version={model_version}",
+
+  "input_create_by_template_id": "/input/create_by_template_id",
+  "input_create_many_by_template_id": "/input/create_many_by_template_id",
+  "input_create_by_prompt": "/input/create_by_prompt",
+  "input_create_many_by_prompt": "/input/create_many_by_prompt",
+  "input_create_by_openai": "/input/create_by_openai",
+
+  "response_create": "/response/create_1",
+  "response_get_by_id": "/response/id/{response_id}",
+  "response_delete_by_id": "/response/{response_id}",
+
+  "tag_create": "/tag",
+  "tag_create_bulk": "/tag/bulk_create",
+  "tag_update": "/tag/update/{tag_id}",
+  "tag_get_by_name": "/tag/{tag_name}",
+  "tag_delete_by_name": "/tag/{tag_name}",
+  "tag_add_to_responses": "/tag/addtagstoresponses",
+  "tag_remove_from_responses": "/tag/removetagsfromresponses",
+  "tag_add_to_inputs": "/tag/add_tags_to_inputs",
+  "tag_remove_from_inputs": "/tag/remove_tags_to_inputs",
+  "tag_get_by_type": "/tag/tagtype?type={tag_type}",
+  "tag_get_associations": "/tag/all_tag_association/{tag_id}",
+
+
+  "template_fetch": "/templates/{template_id}",
+  "template_fetch_all": "/templates",
+  "template_create": "/templates",
+  "template_update": "/templates/{template_id}",
+  "template_delete": "/templates/{template_id}",
+  "template_restore": "/templates/undo/{template_id}",
+  "template_restore_all": "/templates/undo-all",
+  "template_list_deletions": "/templates/deleted",
+  "template_get_all": "/templates/",
+  "template_bulk_create": "/templates/bulk-create",
+  "template_bulk_delete": "/templates/bulk-delete",
+
+
+
+  "heuristic_create": "/heuristic-scorer/create-scorer",
+  "heuristic_update": "/heuristic-scorer/update-scorer",
+  "heuristic_get_by_id": "/heuristic-scorer/{scorer_id}",
+  "heuristic_get_by_name": "/heuristic-scorer/name/{scorer_name}",
+  "heuristic_get_all": "/heuristic-scorer/get-scorers",
+  "heuristic_delete_by_id": "/heuristic-scorer/{scorer_id}",
+
+  "llm_create": "/llm-scorer/create-scorer",
+  "llm_get_by_id": "/llm-scorer/{scorer_id}",
+  "llm_get_by_name": "/llm-scorer/name/{scorer_name}",
+  "llm_get_all": "/llm-scorer/get-scorers",
+  "llm_delete_by_id": "/llm-scorer/{scorer_id}"
+}
